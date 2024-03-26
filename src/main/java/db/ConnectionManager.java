@@ -20,6 +20,7 @@ public class ConnectionManager {
                     .addAnnotatedClass(Owner.class)
                     .addAnnotatedClass(License.class)
                     .addAnnotatedClass(Car.class)
+                    .addAnnotatedClass(Tag.class)
                     .getMetadataBuilder()
                     .build();
 

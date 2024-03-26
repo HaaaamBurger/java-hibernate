@@ -26,9 +26,15 @@ public class Main {
 
         session.persist(license);
 
-        Owner andrew = new Owner().setName("Andrew").setLicense(license).setCars(List.of(audi));
+        Tag tag1 = new Tag().setTitle("spring");
+
+        session.persist(tag1);
+
+        Owner andrew = new Owner().setName("Andrew").setLicense(license).setCars(List.of(audi)).setTags(List.of(tag1));
 
         session.persist(andrew);
+
+
 
         transaction.commit();
         session.close();
